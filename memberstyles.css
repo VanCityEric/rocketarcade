@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html {
+  overflow-x: hidden;
+}
+body {
+  margin-top: 0;
+  padding:0;
+  background-color:#f5f5f5;
+  /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
+  background-position:center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Lato", sans-serif;
+}
+
+
+.entire-container {
+  margin-top: 60px;
+  width: 100vw;
+}
+
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0, 0.1);
+}
+
+
+
+/* Nav styling */
+.nav {
+
+  width: 100vw;
+  background-color: white;
+  height: 60px;
+  margin: 0 auto;
+  position: fixed;
+  /* border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2);
+  top: 0px;
+  z-index: 10!important;
+}
+
+.nav img {
+  width: 100px;
+  margin-bottom: 2px!important;
+}
+
+.nav h2 {
+  margin: 0;
+}
+
+.nav-contents {
+  width: 1250px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  width:100px;
+  height: 100%;
+  color: #2f2f2f;
+  display:table;
+  float: left;
+}
+
+.logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.logo:hover {
+  cursor:pointer;
+}
+.text-link-container {
+  width:920px;
+  height: 100%;
+  float: left;
+  display: table;
+  text-align: left;
+  padding-left: 29px;
+
+}
+
+.text-link {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+.text-link-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.text-link-container li {
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+  height: 58px!important;
+  line-height: 60px;
+    transition: .3s;
+
+}
+
+.text-link-container a {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.text-link-container li:hover {
+background-color: #e9e9e9;
+cursor: pointer;
+}
+
+.username-container {
+  width: 160px;
+  height: 100%;
+  float: left;
+  text-align: right;
+  display: table;
+
+}
+
+.username-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.username-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.user-container {
+  width: 30px;
+  height: 100%;
+  float: right;
+  text-align: right;
+  display: table;
+
+}
+
+.user {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+
+}
+
+.drop-down-container {
+  position: relative;
+  z-index: 10!important;
+}
+
+.dropdown {
+  width: 240px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0, 0.1);
+  position: absolute;
+  right:-25px;
+  top: 55px;
+  z-index: 10!important;
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 20px 0px 20px 0px;
+}
+
+.dropdown li {
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  transition: .3s;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.dropdown li:hover {
+  background-color: #e2e2e2;
+  cursor: pointer;
+}
+
+.dropdown button {
+  border-style: none;
+  padding: 10px 50px 10px 50px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  transition: .3s ease-in-out;
+}
+
+.dropdown-games {
+  right: 900px;
+    z-index: 10!important;
+}
+
+.button-logout {
+  text-align: center!important;
+  margin-top: 40px;
+
+}
+
+.button-logout button:hover {
+  cursor: pointer;
+  background: linear-gradient(41deg, rgba(49,222,214,1) 0%, rgba(137,26,255,1) 100%);
+  color: white!important;
+}
+
+.button-logout:hover  {
+  background-color: white!important;
+
+}
+
+.user-container:hover {
+  cursor: pointer;
+}
+
+.button-delete-acct {
+  margin-top: -10px;
+}
+
+.button-delete-acct:hover {
+  background-color: transparent!important;
+
+}
+
+.button-delete-acct button{
+  background-color: transparent;
+  color: #ff5050;
+}
+
+.button-delete-acct button:hover{
+  box-shadow: none;
+  color: #2f2f2f;
+}
+
+.show {
+ display: none;
+}
+
+
+
+
+/* Slider */
+
+.slide-container {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slide-inner {
+  width: 100%;
+  height: 485px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.slide-inner:hover {
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0, 0.2);
+  cursor: pointer;
+}
+
+.slick-slide {
+   margin: 0 20px;
+ }
+ /* the parent */
+
+
+.image-section {
+  width: 650px;
+  height: 100%;
+  background-color: orange;
+  background-position: center;
+  background-size: cover;
+
+  float: left;
+}
+
+.text-section {
+  width: 300px;
+  height: 100%;
+  float: right;
+  text-align: left;
+  display: table;
+
+
+}
+
+.inner-text {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  left: -10px;
+}
+
+.inner-text h3 {
+  font-size: 1.3em;
+}
+
+.inner-text p {
+  font-size: 1em;
+  width: 240px;
+  margin-top: 10px;
+}
+
+.inner-text button {
+  border-style: none;
+  border-radius: 100px;
+  padding: 10px 30px 10px 30px;
+  margin-top: 40px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.play {
+  background: rgb(49,222,214);
+  background: linear-gradient(41deg, rgba(49,222,214,1) 0%, rgba(137,26,255,1) 100%);
+  color: white;
+}
+
+.slideone {
+  background-image: url('battlefield-new.jpg');
+}
+
+.slidetwo {
+  background-image: url('sims4-new.jpg');
+}
+
+.slidethree {
+  background-image: url('fortnite3.jpg');
+}
+
+.arrow-slides {
+  width: 1020px;
+  margin: 0 auto;
+  position: relative;
+  top: -380px;
+
+
+}
+
+.arrow-slides button {
+  border-style: none;
+  background-color: white;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2);
+  outline: none;
+  width: 50px;
+  height: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.nextbtn {
+  float: right;
+}
+
+.slick-current.slick-active.slick-center {
+    opacity:1;
+    filter: blur(0px);
+
+}
+.slick-slide  {
+    opacity:0.5;
+    filter: blur(2px);
+
+}
+/* end of slides */
+
+.landing-container {
+  width: 100vw;
+  height: 630px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+
+}
+
+video {
+  width: 100%;
+
+}
+
+.landing-text {
+  width: 1200px;
+  height: 630px;
+  margin: 0 auto;
+  text-align: center;
+  display: table;
+  position: relative;
+  top: -630px;
+}
+
+.landing-inner-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.landing-inner-text h2 {
+  color: white;
+  font-size: 2.3em;
+  margin-bottom: 20px;
+}
+
+.landing-inner-text p {
+  color: white;
+  font-size: 1.3em;
+  font-weight:400;
+}
+
+.landing-inner-text button {
+  cursor: pointer;
+  border-style: none;
+  border-radius: 50px;
+  padding: 15px 40px 15px 40px;
+  font-family: "Lato", sans-serif;
+  margin-top: 60px;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  background: rgb(49,222,214);
+  background: linear-gradient(41deg, rgba(49,222,214,1) 0%, rgba(137,26,255,1) 100%);
+}
+
+.featured-games {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -550px;
+  margin-bottom: 30px;
+  font-size: 1.3em;
+}
+
+
+.filler {
+  width: 100px;
+  height: 800px;
+}
+
+/* Profile page styling */
+.profile-banner {
+  width: 100vw;
+  height: 280px;
+  background: linear-gradient(41deg, rgba(49,222,214,1) 0%, rgba(137,26,255,1) 100%);
+}
+
+.profile-contents-inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: -190px;
+}
+
+.side-profile-info {
+  width: 350px;
+  border-radius: 20px;
+  /* background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2); */
+  float: left;
+}
+
+.profile-image {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+
+}
+
+.profile-image img {
+  width: 350px;
+}
+
+.profile-circle-crop {
+  width: 300px;
+  height: 300px;
+  border-radius: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px!important;
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.2); */
+    border: 12px solid white;
+}
+
+.edit-prof {
+  position: relative;
+  top: -120px;
+  right: -300px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255,255,255, 0.6);
+  border-radius: 5px;
+}
+
+.fas {
+  color: #2f2f2f;
+  position: relative;
+  left: 2px;
+  top: 1.5px;
+}
+
+.fa-chevron-left {
+  left: 0px;
+}
+
+.profile-about h3 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 0.9em;
+}
+
+.profile-about {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.main-profile-info {
+  width: 850px;
+  float: right;
+}
+
+.profile-username {
+  width: 100%;
+  height: 190px;
+  display: table;
+}
+
+.profile-username-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 40px;
+  padding-top:80px;
+  color: white;
+}
+
+.hello {
+  font-weight: 400;
+}
+
+.profile-username h2 {
+  font-size: 3em;
+}
